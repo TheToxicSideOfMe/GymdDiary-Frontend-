@@ -1,0 +1,6 @@
+services:
+- type: web
+  name: Gym-App
+  env: static
+  buildCommand: npm run build
+  publishDir: build
