@@ -17,7 +17,7 @@ function SplitsPage() {
 
   const fetchSplits = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/splits');
+      const response = await axios.get('https://gymdiary.onrender.com/api/splits');
       setSplits(response.data);
       setLoading(false);
     } catch (err) {
