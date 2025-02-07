@@ -12,7 +12,7 @@ function SplitCardLog({ split }) {
   useEffect(() => {
     const fetchWorkoutCount = async () => {
       try {
-        const response = await axios.get(`http://localhost:8080/api/splits/${split.id}/workouts`);
+        const response = await axios.get(`https://gymddiary-frontend.onrender.com/api/splits/${split.id}/workouts`);
         setWorkoutCount(response.data.length);
       } catch (err) {
         console.error('Error fetching workouts:', err);
