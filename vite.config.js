@@ -7,14 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "/GymmDiary/",
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    rollupOptions: {
-      input: {
-        main: 'index.html',
-      },
-    }
-  }
+  base: "/GymmDiary/"
 })
