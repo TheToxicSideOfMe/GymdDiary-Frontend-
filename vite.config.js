@@ -7,5 +7,15 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "/GymmDiary/",  
+  base: "/GymmDiary/",
+  build: {
+    rollupOptions: {
+      output: {
+        // This ensures the built files use .js extension
+        entryFileNames: `assets/[name].js`,
+        chunkFileNames: `assets/[name].js`,
+        assetFileNames: `assets/[name].[ext]`
+      }
+    }
+  }
 })
