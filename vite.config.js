@@ -9,13 +9,12 @@ export default defineConfig({
   ],
   base: "/GymmDiary/",
   build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
     rollupOptions: {
-      output: {
-        // This ensures the built files use .js extension
-        entryFileNames: `assets/[name].js`,
-        chunkFileNames: `assets/[name].js`,
-        assetFileNames: `assets/[name].[ext]`
-      }
+      input: {
+        main: 'index.html',
+      },
     }
   }
 })
