@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <Router basename="/GymmDiary">
+
       <div className="min-h-screen bg-[#1a1a1a]">
         <Header/>
         <main className="pt-20">
@@ -32,7 +32,6 @@ function App() {
         </Routes>
         </main>
         </div>
-      </Router>
     </>
   )
 }
